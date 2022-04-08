@@ -1,0 +1,24 @@
+# PROJECT PROPOSAL
+By Priyavrat Gupta and Shaan Mehta;
+
+## The Big Idea:
+For the final project, the team decided to work on something that we are both passionate about- poker. Both of us play are experienced poker players and have our fair share of migraine problems in poker that we would like to alleviate through Python. The platform we use to play poker in is a website called [Poker Now](https://www.pokernow.club/). Each new game created here comes with a unique link that you can share with your friends. The main problem we face is settling the accounts after we are done playing. Poker Now does a good job of maintaining a ledger that tracks the buy-ins of a particular person or in technical terms the buy-ins of an IP address of a device. But it lacks the feature of splitting the accounts to show who owes who how much. We have to do that manually. If it is a short game where people are not continuously joining and leaving it is easy to do but when it becomes a long game it is extremely tedious and a boring task to do each time. Both of us think the solution to this problem lies through coding where a person can just input the game link or links on our web app and the simplified accounts of who owes who how much will be shown. This project is something that we plan on using in the future and sharing with our friends and acquaintances to use freely. We plan on exploring how to scrape data from the Poker Now website. We will need to scrape the ledger or ledgers from the unique game links and then analyze the ledger to show who owes who how much like Splitwise does to your expenses. We want our split functionality to be smart and find an efficient way to do the accounts. The stretch goal for our project is to include multiple game links so that we can do the accounts after a few games. A moonshot goal is to also analyze the hand logs and determine the pre-flop and post-flop analysis of each player. We have shared this idea with our friends and acquaintances and recieved very positive feedback on this and thus are very excited to get started on this. 
+
+## Learning Goals:
+We really want to focus on learning data scraping in this project. Priyavrat wanted to learn the intricacies of data scraping for an internship and Shaan just generally was really passionate about learning it. Since there is no API for Poker Now it will be a real challenge to gather the ledger from it. Our goal is to write some code that will be useful to both of us and something that we will actually use in the future. We also want to learn how to format code correctly so that it is easy to understand and we will be able to work on larger projects without our commits getting rejected. 
+
+## Implementation Plan:
+Our plan is to first figure out how to scrape data properly. We plan on using all online resources and the professor's help to figure out how to obtain the ledger from Poker Now. Then we will work on simplifying the debts which should not be that hard as it is mainly logical. For our stretch and moonshot goals we will try to implement as much as we can as time permits.
+
+## Project Schedule:
+Since we only have a few weeks to implement this project, we have structured our plan to accommodate for any delays so that we can submit the project on time. We are keeping a very flexible schedule so that we can devote our maximum time and effort to it. We plan on figuring out if obtaining the ledger from Poker Now is feasible by this weekend. By next weekend we plan on finishing the data scraping part. By next to next weekend we plan on finishing the simplifying debts part and lo and behold our main deliverables should be finished well before time. Then we can work on fixing the bugs and user testing and also our stretch and moonshot goals.
+
+## Collaboration Plan:
+We are close friends who work well together as a team. We plan on meeting after our classes each day in person or in Webex to work on this project together. We will break up this project into many parts and make a document assigning a leadership role for each part. The leader will be responsible for his parts but we will help each other out with everything and work on the whole project together. This will just motivate us more to ensure that everything is completed and we will hold each other responsible for completing each task. 
+
+## Risks:
+The biggest challenge we will face in this is obtaining the ledger from the Poker Now website. We will try our best to learn data scraping to do it but if we are not able to do so we have come up with a backup plan. We have found an amazing API that contains all the statistics of previous games in cricket. We will analyze the data in that and make predictions using our own models. 
+
+## Additional Course Content:
+1) Some more classes on data scraping would be very helpful.
+2) A class on formatting code and beautifying it will be really nice.
