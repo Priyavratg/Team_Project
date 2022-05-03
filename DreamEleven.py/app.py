@@ -1,22 +1,46 @@
-from operator import ge
 from flask import Flask, render_template, request
-
-from DreamEleven import generate_user_team, generate_computer_team, calculate_team_avg_rating, calculate_team_difference, get_player_from_user
 
 app = Flask(__name__)
 
-@app.route('/DreamEleven/', methods = ["GET", "POST"])
-def get_team():
-    Your_team = generate_user_team()
-    Opponent_team = generate_computer_team()
+
+@app.route('/team/', methods=["POST", "GET"])
+def get_player():
     if request.method == "POST":
-        Player_selection = request.form("Player")
-        User_player = (get_player_from_user(Player_selection))
-        
+        player = request.form["player"]
+        result = player
+        return render_template("result.html", result2=result)
+    else:
+        random_players = ['a', 'b', 'c', 'd']
+        return render_template("team.html", players=random_players)
 
-        return render_template("Player_Selection.html", player_name = User_player)
-    return render_template("Final_Team.html", Your_team = Your_team, Opponent_team = Opponent_team)
 
-if __name__ == '__main__':
+@app.route("/", methods=["POST", "GET"])
+def index():
+    if request.method == "POST":
+        location = request.form["location"]
+        result = "some result"
+        return render_template("form2.html", result1=result)
+    return render_template("form1.html")
 
+
+@app.route("/result", methods=["POST", "GET"])
+def result():
+    if request.method == "POST":
+        location = request.form["location"]
+        result = "some new result"
+        return render_template("result.html", result2=result)
+    return render_template("form2.html")
+
+
+@app.route('/start')
+def start_page():
+    return render_template('start.html')
+
+
+@app.route('/upload')
+def upload_file():
+    return 'hi'
+
+
+if __name__ == "__main__":
     app.run(debug=True)

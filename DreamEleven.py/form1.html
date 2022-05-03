@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 1</title>
+  </head>
+  <body>
+    <label>Goalkeeper</label>
+    <select name= colours method="GET" action="/">
+      {% for player in Players %}
+      <option value= "{{player}" SELECTED>{{player}}</option>"
+      {% endfor %}
+  </select>
+  <br> 
+    <label>Defender</label>
+    <input>
+    <br>
+    <label>Defender</label>
+    <input>
+    <br>
+    <label>Defender</label>
+    <input>
+    <br>
+    <label>Defender</label>
+    <input>
+    <br>
+    <label>Midfielder</label>
+    <input>
+    <br>
+    <label>Midfielder</label>
+    <input>
+    <br>
+    <label>Midfielder</label>
+    <input>
+    <br>
+    <label>Midfielder</label>
+    <input>
+    <br>
+    <label>Forward</label>
+    <input>
+    <br>
+    <label>Forward</label>
+    <input>
+    <br>
+    <form action="" method="post">
+      <input type="text" name="location"/>
+      <button>Create Team</button>
+    </form>
+  </body>
+</html>
