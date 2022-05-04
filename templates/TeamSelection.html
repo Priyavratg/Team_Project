@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+  </head>
+  <body>
+  <form action="/" method="post">
+    <label>Goalkeeper</label>
+    <select name="golkeeper" id="golkeeper">
+      {% for player in choose_five %}
+        <option value= "{{player}}" SELECTED>{{player}}</option>"
+      {% endfor %}
+  </select>
+  <br> <br>
+    <label>Defender 1</label>
+    <select name="defender1" id="defender1">
+      {% for player in defender_temp1 %}
+      <option value= "{{player}}" SELECTED>
+          {{player}}
+      </option>
+      {% endfor %}
+  </select>
+    <br><br>
+    <label>Defender 2</label>
+    <select name="defender2" id="defender2">
+      {% for player in defender_temp2 %}
+         <option value= "{{player}}" SELECTED>
+          {{player}}
+      </option>
+      {% endfor %}
+  </select>
+    <br><br>
+    <label>Defender 3</label>
+    <select name="defender3" id="defender3">
+      {% for player in defender_temp3 %}
+        <option value= "{{player}}" SELECTED>
+          {{player}}
+      </option>
+      {% endfor %}
+  </select>
+    <br><br>
+    <label>Defender 4</label>
+    <select name="defender4" id="defender4">
+      {% for player in defender_temp4 %}
+          <option value= "{{player}}" SELECTED>
+          {{player}}
+      </option>
+      {% endfor %}
+  </select>
+    <br><br>
+    <label>Midfielder 1</label>
+    <select name="modifier1" id="modifier1">
+      {% for player in midfielder_temp1 %}
+          <option value= "{{player}}" SELECTED>
+          {{player}}
+      </option>
+      {% endfor %}
+  </select>
+    <br><br>
+    <label>Midfielder 2</label>
+    <select name="modifier2" id="modifier2">
+      {% for player in midfielder_temp2 %}
+          <option value= "{{player}}" SELECTED>
+          {{player}}
+      </option>
+      {% endfor %}
+  </select>
+    <br><br>
+    <label>Midfielder 3</label>
+    <select name="modifier3" id="modifier3">
+      {% for player in midfielder_temp3 %}
+          <option value= "{{player}}" SELECTED>
+          {{player}}
+      </option>
+      {% endfor %}
+  </select>
+    <br><br>
+    <label>Midfielder 4</label>
+    <select name="modifier4" id="modifier4">
+      {% for player in midfielder_temp3 %}
+          <option value= "{{player}}" SELECTED>
+          {{player}}
+      </option>
+      {% endfor %}
+  </select>
+    <br><br>
+    <label>Forward 1</label>
+    <select name="forward1" id="forward1">
+      {% for player in attacker_temp1 %}
+      <option value= "{{player}}" SELECTED>
+        {{player}}
+      </option>
+      {% endfor %}
+  </select>
+    <br><br>
+    <label>Forward 2</label>
+    <select name="forward2" id="forward2">
+      {% for player in attacker_temp2 %}
+      <option value= "{{player}}" SELECTED>
+        {{player}}
+      </option>
+      {% endfor %}
+  </select>
+    <br><br>
+      <button>Create Team</button>
+    </form>
+  </body>
+</html>

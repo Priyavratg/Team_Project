@@ -160,7 +160,7 @@ class Player:
 # This function will be used to generate a random set of players for a particular title
 
 
-def generate_title_players(team, title, number_of_players=5):
+def generate_player_position(team, title, number_of_players=5):
     """
     This function will generate a dict of `number_of_players` random players from a given title
     """
@@ -183,12 +183,12 @@ def display_players(players, should_display_ratings=False):
     for player in players.values():
         print(
             f"{player.name.ljust(20)} {str(player.rating).ljust(20) if should_display_ratings else ''} {player.title[:-1].ljust(20)}")
-    return player
+    
 
 def get_player_from_user(team, title, number_of_players=1):
     for i in range(number_of_players):
         # generate a set of 5 players from the list of players
-        players = generate_title_players(team, title, 5)
+        players = generate_player_position(team, title, 5)
         display_players(players=players)
 
         # ask the user to select a player from the list until a valid player is selected
@@ -208,7 +208,7 @@ def get_player_from_user(team, title, number_of_players=1):
 def get_player_from_computer(team, title, number_of_players=1):
     for i in range(number_of_players):
         # generate a set of 5 players from the list of players
-        players = generate_title_players(team, title, 5)
+        players = generate_player_position(team, title, 5)
         player = random.choice([k for k in players.keys()])
         team[player] = Player(player, PLAYERS[title][player], title)
 
