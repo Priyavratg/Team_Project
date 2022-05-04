@@ -183,7 +183,7 @@ def display_players(players, should_display_ratings=False):
     for player in players.values():
         print(
             f"{player.name.ljust(20)} {str(player.rating).ljust(20) if should_display_ratings else ''} {player.title[:-1].ljust(20)}")
-
+    return player
 
 def get_player_from_user(team, title, number_of_players=1):
     for i in range(number_of_players):
