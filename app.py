@@ -14,7 +14,7 @@ def toappenddictinlist(title):
 
 @app.route('/about')
 def about():
-    title = "About the Game"
+    title = "Read about the Game"
     return render_template("about.html")
 
 @app.route("/", methods=["POST", "GET"])
